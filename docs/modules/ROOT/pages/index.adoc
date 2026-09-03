@@ -1,0 +1,22 @@
+= UniProvider
+:description: Reference implementation of the Open Provider Registry (OPR) for online and offline model runners.
+
+**UniProvider** is Dev-Centr’s reference implementation of the **Open Provider Registry (OPR)** — an open protocol so model runners register once and every editor, agent harness, or aggregator can find them.
+
+It is *not* a bid to own the only “unilayer” on the machine.
+Competing aggregator apps may exist.
+They should speak **OPR**, not invent a second registration format that offline runners must also ship.
+
+== What ships in 0.1
+
+* OPR draft: xref:opr.adoc[Open Provider Registry]
+* CLI: `list` / `register` / `serve`
+* Well-known probes (transition only): Ollama, LM Studio, llama.cpp, vLLM, LocalAI
+* Localhost aggregator defaults to `http://127.0.0.1:39200`
+
+== Related
+
+* Mixr routes jobs; OPR discovers endpoints — xref:agent-rules::mixr-routing-and-cost.adoc[Mixr routing and cost]
+* Inference layer vocabulary — xref:general-knowledge::explanation/infrastructure/agent-control-planes.adoc[Agent control planes]
+* Markdown editors that need local AI — xref:general-knowledge::explanation/documentation/markdown-editors-on-disk.adoc[Markdown editors on local disk]
+* Online directory (tentative) — link:https://github.com/dev-centr/opr-directory[opr-directory]

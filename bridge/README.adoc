@@ -1,0 +1,28 @@
+= Bridging OPR to JavaScript / Tauri
+:description: Prefer HTTP over FFI/WASM until a measured penalty forces a rewrite.
+
+== Default: localhost HTTP
+
+Tauri apps (SoloMD and peers) already speak OpenAI-compatible HTTP and often have an `openai-compat` provider slot.
+The ergonomic bridge is:
+
+1. Run an OPR-aware aggregator (`uniprovider serve`) **or** read OPR manifests from disk in the Rust/TS side.
+2. Point the app at `http://127.0.0.1:<port>/v1` for a merged model list, **or** list `/opr/v1/providers` and call each `base_url` directly.
+
+No D↔JS foreign function interface is required for that path.
+No WASM build of the D library is required for that path.
+
+== When to consider FFI or WASM
+
+Only if profiling shows the HTTP hop or a separate process is an unacceptable cost for a specific product:
+
+* **FFI** — link a shared library from the Tauri Rust host (still keep OPR manifests as the source of truth).
+* **WASM** — only if the consumer is browser-only and cannot reach localhost aggregators (rare for local-first desktop).
+
+Do **not** rewrite UniProvider in TypeScript solely for convenience.
+Rewrite (or dual-implement the *protocol consumer*) only after a measured transition cost or performance penalty.
+
+== Protocol, not product lock-in
+
+Apps should implement **Open Provider Registry (OPR)** (`spec/opr.md`), not a UniProvider-only API.
+UniProvider is a reference implementation. Another aggregator that reads the same `opr/providers/*.opr.json` files is conformant.

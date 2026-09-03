@@ -1,0 +1,29 @@
+name "uniprovider"
+description "Machine-local model provider discovery and OpenAI-compat aggregation"
+version "0.1.0"
+authors "DevCentr"
+copyright "Copyright © 2026, DevCentr"
+homepage "https://github.com/dev-centr/uniprovider"
+license "MIT"
+
+targetType "library"
+targetName "uniprovider"
+
+configuration "library" {
+	targetType "library"
+	sourcePaths "source"
+	excludedSourceFiles "source/app.d"
+}
+
+configuration "application" {
+	targetType "executable"
+	targetName "uniprovider"
+	mainSourceFile "source/app.d"
+	sourcePaths "source"
+}
+
+configuration "unittest" {
+	targetType "library"
+	sourcePaths "source"
+	excludedSourceFiles "source/app.d"
+}

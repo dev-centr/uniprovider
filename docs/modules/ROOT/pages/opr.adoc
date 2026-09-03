@@ -1,0 +1,17 @@
+= Open Provider Registry
+:description: OPR — open registration and exposure for online and offline model providers.
+
+The canonical draft lives in the repository: link:https://github.com/dev-centr/uniprovider/blob/main/spec/opr.md[`spec/opr.md`].
+
+== Problem
+
+If every app invents its own unilayer registration scheme, offline model runners become the unpaid compliance department for desktop AI.
+OPR is a single open format (directory manifests + optional HTTP) so runners implement discovery once.
+
+== Shape (v1)
+
+* Write `<id>.opr.json` under platform `opr/providers/` roots.
+* Optional live `GET /opr/v1/providers`.
+* Prefer OpenAI-compatible `base_url` values.
+
+UniProvider probes well-known ports only as a bridge until runners emit OPR manifests themselves.

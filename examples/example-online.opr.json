@@ -1,0 +1,13 @@
+{
+  "opr_version": 1,
+  "id": "example-online",
+  "display_name": "Example Cloud BYOK",
+  "class": "online",
+  "base_url": "https://api.example.com/v1",
+  "api_format": "openai",
+  "keyless": false,
+  "tags": ["example", "cloud"],
+  "models": [
+    { "id": "example-large", "name": "Example Large" }
+  ]
+}

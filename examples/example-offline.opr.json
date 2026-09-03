@@ -1,0 +1,13 @@
+{
+  "opr_version": 1,
+  "id": "example-offline",
+  "display_name": "Example Offline Runner",
+  "class": "offline",
+  "base_url": "http://127.0.0.1:9999/v1",
+  "api_format": "openai",
+  "keyless": true,
+  "tags": ["example", "local"],
+  "models": [
+    { "id": "example-7b", "name": "Example 7B" }
+  ]
+}

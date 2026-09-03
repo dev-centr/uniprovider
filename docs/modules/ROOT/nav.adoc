@@ -1,0 +1,4 @@
+* xref:index.adoc[Overview]
+* xref:opr.adoc[Open Provider Registry]
+* xref:bridge.adoc[JS / Tauri bridge]
+* xref:changelog.adoc[Changelog]

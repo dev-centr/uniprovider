@@ -1,0 +1,5 @@
+Prefer localhost HTTP (or reading OPR manifests from disk) over FFI/WASM.
+Tauri apps that already have an OpenAI-compatible provider slot can point at an OPR aggregator or call each provider `base_url` after discovery.
+
+Rewrite the consumer in TypeScript only after a measured foreign-function or process penalty — not for convenience.
+Full note: link:https://github.com/dev-centr/uniprovider/blob/main/bridge/README.adoc[`bridge/README.adoc`].

@@ -1,0 +1,4 @@
+= JS / Tauri bridge
+:description: HTTP-first consumption of OPR from JavaScript and Tauri hosts.
+
+include::partial$bridge-body.adoc[]
