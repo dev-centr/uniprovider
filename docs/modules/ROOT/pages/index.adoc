@@ -19,4 +19,4 @@ They should speak **OPR**, not invent a second registration format that offline 
 * Mixr routes jobs; OPR discovers endpoints — xref:agent-rules::mixr-routing-and-cost.adoc[Mixr routing and cost]
 * Inference layer vocabulary — xref:general-knowledge::explanation/infrastructure/agent-control-planes.adoc[Agent control planes]
 * Markdown editors that need local AI — xref:general-knowledge::explanation/documentation/markdown-editors-on-disk.adoc[Markdown editors on local disk]
-* Online directory (tentative) — link:https://github.com/dev-centr/opr-directory[opr-directory]
+* Online directory — link:https://github.com/dev-centr/opr-directory[opr-directory] (SolidStart · Netlify/Vercel)

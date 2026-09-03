@@ -24,7 +24,7 @@ UniProvider is Dev-Centr’s reference consumer and transitional well-known prob
 - Choosing which model is “best” for a job (that is routing — e.g. Hornet **Mixr**).
 - Replacing vendor APIs or API-key vaults.
 - Forcing every runner to embed our library (file drop is enough).
-- **A public online registration directory** that niche providers join and apps poll worldwide. OpenAI-compat is only a wire format; it does not provide that. An online directory needs a hosted service (planned skeleton: [dev-centr/opr-directory](https://github.com/dev-centr/opr-directory), tentative host `providers.devcentr.org`). **Out of scope for UniProvider today.**
+- **A public online registration directory** that niche providers join and apps poll worldwide. That is a separate product: [dev-centr/opr-directory](https://github.com/dev-centr/opr-directory) (SolidStart · Netlify/Vercel · planned `providers.devcentr.org`). UniProvider stays local-first.
 
 ## Prior art (why OPR still exists)
 

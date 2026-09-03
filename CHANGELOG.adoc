@@ -1,9 +1,14 @@
 = Changelog
 
+== 2026-09-02 — Optional online directory poll
+
+* When `OPR_DIRECTORY_URL` is set, `list` / discovery soft-fetches `GET /opr/v1/providers` and merges after local manifests (before well-known probes).
+* Spec/docs: online directory is SolidStart on Netlify/Vercel (`opr-directory`), not out-of-scope forever.
+
 == 2026-09-02 — Initial OPR PoC
 
 * Draft **Open Provider Registry (OPR)** v0.1 (`spec/opr.md`): shared on-disk manifests + optional `/opr/v1/*` HTTP.
 * D library + CLI: discover manifests, probe well-known local runners (Ollama, LM Studio, llama.cpp, vLLM, LocalAI), `register`, `serve` aggregator on `127.0.0.1:39200`.
 * Bridge note: prefer localhost HTTP for Tauri/JS; FFI/WASM only if measured cost requires it.
 * Stance: protocol-first — competing aggregator products are fine; competing registration formats are not.
-* Prior art noted in `spec/opr.md` (OpenAI-compat / OpenRouter / LiteLLM / Olla / UPP); online directory deferred to tentative `opr-directory`.
+* Prior art noted in `spec/opr.md` (OpenAI-compat / OpenRouter / LiteLLM / Olla / UPP); online directory lives in sibling `opr-directory`.

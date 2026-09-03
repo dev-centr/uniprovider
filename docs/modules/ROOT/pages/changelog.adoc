@@ -1,5 +1,9 @@
 = Changelog
 
+== 2026-09-02 — Optional online directory poll
+
+* When `OPR_DIRECTORY_URL` is set, discovery soft-fetches the online catalog and merges after local manifests.
+
 == 2026-09-02 — Initial OPR PoC
 
 * Draft **Open Provider Registry (OPR)** v0.1 (`spec/opr.md`): shared on-disk manifests + optional `/opr/v1/*` HTTP.

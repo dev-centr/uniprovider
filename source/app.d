@@ -90,6 +90,7 @@ void usage()
     writeln("  uniprovider register --id <slug> --base-url <url> [--name ...] [--model ...] [--class offline|online|hybrid]");
     writeln("  uniprovider roots");
     writeln("");
+    writeln("Optional: set OPR_DIRECTORY_URL to poll an online directory (e.g. https://providers.devcentr.org).");
     writeln("Protocol: Open Provider Registry (OPR) — see spec/opr.md");
     writeln("Apps should prefer OPR over inventing another unilayer registration format.");
 }
