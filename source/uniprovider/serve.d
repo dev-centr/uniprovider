@@ -11,7 +11,7 @@ import std.stdio : writeln;
 import std.string : indexOf, strip;
 
 /// Minimal localhost OpenAI-compat facade over discovered providers.
-/// Apps (SoloMD, Hornet/Mixr, IDEs) speak one base URL; UniProvider lists
+/// Apps (SoloMD, Harness/Mixr, IDEs) speak one base URL; UniProvider lists
 /// models from every registered/probed runner. Completion proxying is
 /// intentionally thin in v0 — prefer apps calling the provider base_url
 /// directly once discovery has named it.

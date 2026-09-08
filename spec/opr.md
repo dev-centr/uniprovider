@@ -21,7 +21,7 @@ UniProvider is Dev-Centr’s reference consumer and transitional well-known prob
 
 ## Non-goals (v0)
 
-- Choosing which model is “best” for a job (that is routing — e.g. Hornet **Mixr**).
+- Choosing which model is “best” for a job (that is routing — e.g. Harness **Mixr**).
 - Replacing vendor APIs or API-key vaults.
 - Forcing every runner to embed our library (file drop is enough).
 - **A public online registration directory** that niche providers join and apps poll worldwide. That is a separate product: [dev-centr/opr-directory](https://github.com/dev-centr/opr-directory) (SolidStart · Netlify/Vercel · planned `providers.devcentr.org`). UniProvider stays local-first.
