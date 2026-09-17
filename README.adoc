@@ -16,7 +16,7 @@ ifdef::env-github[]
 <h3 align="center">UniProvider</h3>
 <p align="center">
 Reference implementation of the <strong>Open Provider Registry (OPR)</strong> — one open registration protocol for online and offline model runners.<br />
-<a href="https://docs.devcentr.org/uniprovider/"><strong>Explore the docs »</strong></a>
+<a href="https://docs.devcentr.org/tools/uniprovider/"><strong>Explore the docs »</strong></a>
 ·
 <a href="https://github.com/dev-centr/uniprovider/blob/main/spec/opr.md"><strong>OPR spec »</strong></a><br /><br />
 <a href="https://github.com/dev-centr/uniprovider/issues">Report Bug</a>
@@ -32,7 +32,7 @@ ifndef::env-github[]
 
 Reference implementation of the **Open Provider Registry (OPR)** — one open registration protocol for online and offline model runners.
 
-link:https://docs.devcentr.org/uniprovider/[Explore the docs »] ·
+link:https://docs.devcentr.org/tools/uniprovider/[Explore the docs »] ·
 link:spec/opr.md[OPR spec]
 endif::[]
 
@@ -71,7 +71,7 @@ dub build --config=application
 
 === Changelog
 
-See link:CHANGELOG.adoc[CHANGELOG.adoc] (hub: https://docs.devcentr.org/uniprovider/changelog.html when published).
+See link:CHANGELOG.adoc[CHANGELOG.adoc] (hub: https://docs.devcentr.org/tools/uniprovider/changelog.html when published).
 
 == License
 

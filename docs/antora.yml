@@ -1,5 +1,5 @@
-name: uniprovider
-title: UniProvider
-version: 0.1.0
+name: tools
+title: Tools
+version: ~
 nav:
-  - modules/ROOT/nav.adoc
+- modules/uniprovider/nav.adoc
